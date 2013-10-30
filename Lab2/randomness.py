@@ -7,9 +7,15 @@ def random():
 		print "Heads"
 	else:
 		print "Tails"
-def flipItAlot:
+def flipItAlot():
 	times = int(raw_input("Flip it how many times? "))
 	coins = []	
 	for t in range(times):
-		randomNumber = randint(0,100)
-random()
+		randomNumber = randint(0,1)
+		if randomNumber == 0:
+			coins.append("heads")
+		else:
+			coins.append("tails")
+	return coins
+
+print flipItAlot()
