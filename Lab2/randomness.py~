@@ -1,0 +1,10 @@
+from random import randint
+
+def random():
+	prob = int(raw_input("What probability is heads (%)? "))
+	randomNumber = randint(0,100)
+	if randomNumber < prob:
+		print "Heads"
+	else:
+		print "Tails"
+random()
